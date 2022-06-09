@@ -22,7 +22,7 @@ function Login1() {
   let url = "https://eu.mspapis.com/loginidentity/connect/token";
 
   if(Server === 'us' || Server === 'UnitedStates') {
-    url = "https://us.mspapis.com/loginidentity/connect/token":
+    url = "https://us.mspapis.com/loginidentity/connect/token";
   }
 
   <!--Send first login request to api-->
