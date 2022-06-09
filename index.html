@@ -2,12 +2,41 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Beyza <3</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Msp tools</title>
   </head>
   <body>
+    <!-- <br> set a space-->
+    <br>
+    <h1 class="logo">MSP tools</h1>
+    <p class="logodefinition">MovieStarPlanet2 tools by TakaoJS#0404</p>
+    <p class="statusdefinition">LoggedIn : </p>
+    <p class="logdefinition">false</p>
+    <!--Making the tool selection-->
     <center>
-      <img src="https://icones.pro/wp-content/uploads/2021/02/icone-de-coeur-rouge-1.png" style="position: relative; width: 45px; top: 240px;">
-      <p style="position: relative; top: 250px; font-weight: bold;">Love you Beyza <3</p>
-      </center>
+      <p class="loginlabel" onclick="Login1();">Login</p>
+      <p class="loginmod">Login with moderator account</p>
+      <p class="gomod">go to admin panel</p>
+      <br>
+      <br>
+      <p class="genderlab">Gender Switcher</p>
+      <br>
+      <br>
+      <p class="buylab">Item buyer</p>
+    </center>
+    <script>
+      let Username = "n"; let Password = "p"; let Server = "s";
+      <!--initialize the params-->
+
+      function Login1() {
+        fetch("https://youtube.com", {
+            body: "email=test@example.com&password=pw",
+            headers: {
+               "Content-Type": "application/x-www-form-urlencoded",
+            },
+            method: "post",
+      }
+    }
+    </script>
   </body>
 </html>
