@@ -1,150 +1,88 @@
-html, body {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  background-color:#24252A;
+}
+
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display:flex;
+  justify-content:flex-end;
+  align-items: center;
+  padding: 30px 10%;
 }
 
 .logo {
-  position: relative;
-  font-family: Verdana, sans-serif;
-  color: #E44D25;
-  left: 15px;
-  margin-bottom: -10px;
-  font-size: 13px;
+    cursor: pointer;
+    margin-right: auto;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
 
-.logodefinition {
-  position: relative;
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  left: 15px;
-  font-size: 11px;
-  margin-bottom: -10px;
+.nav_links {
+  list-style: none;
 }
 
-.statusdefinition {
-  position: relative;
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  left: 15px;
-  font-size: 11px;
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-.logdefinition {
-  position: relative;
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  left: 80px;
-  top: -23px;
-  color: red;
-  font-size: 11px;
-  margin-bottom: -10px;
+.nav_links li a {
+  transition: all 0.3 ease 0s;
 }
 
 
-.loginlabel {
-  position: relative;
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  top: 50px;
-  margin-bottom: -10px;
+.nav_links li a:hover {
+  color: #0088a9;
 }
 
-.loginlabel:hover {
-  position: relative;
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  top: 50px;
-  color: #7635DC;
-  margin-bottom: -10px;
+button {
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border-radius: 50px;
+  border: none;
   cursor: pointer;
+  transition: all 0.3 ease 0s;
 }
 
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
 
-.loginmod {
+.presentation {
+  position: absolute;
+  width: 800px;
+  left: 100px;
+  display: inline-block;
+  word-break: break-all; /* optional */
+}
+
+.mspimg {
+  object-fit: cover;
+  object-position: center;
+  width: 40%;
   position: relative;
-  font-family: Verdana, sans-serif;
+  top: 120px;
+}
+
+.msptest {
+  color: white;
+  position: relative;
+  left: 380px;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 12px;
-  top: 50px;
-  margin-bottom: -8px;
+  font-size:2vw;
+  top: -120px;
 }
-
-.loginmod:hover {
-  position: relative;
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  top: 50px;
-  cursor: pointer;
-  color: #7635DC;
-}
-
-.gomod {
-  position: relative;
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 10px;
-  top: 50px;
-  margin-bottom: -10px;
-  color: red;
-  cursor: pointer;
-}
-
-.genderlab {
-  position: relative;
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  top: 50px;
-  margin-bottom: -10px;
-}
-
-.genderlab:hover {
-  position: relative;
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  top: 50px;
-  margin-bottom: -10px;
-  cursor: pointer;
-  color: #7635DC;
-}
-
-.buylab {
-  position: relative;
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  top: 50px;
-  margin-bottom: -10px;
-}
-.buylab:hover {
-  position: relative;
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  top: 50px;
-  margin-bottom: -10px;
-  cursor: pointer;
-  color: #7635DC;
-}
-
-.usernameinput {
-  position: relative;
-  top: 80px;
-}
-
-.passwordinput {
-  position: relative;
-  top: 80px;
-}
-
-.serverinput
- {
-   position:relative;
-   top: 150px;
- }
